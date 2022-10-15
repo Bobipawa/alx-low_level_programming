@@ -1,9 +1,9 @@
 #include <stdio.h>
-
 /**
- *omm,t
+ *main - Print variables sizes*
+ *
+ *Return: 0 always
  */
-
 int main(void)
 {
 printf("Size of a char: %d byte(s)\n", sizeof(char));

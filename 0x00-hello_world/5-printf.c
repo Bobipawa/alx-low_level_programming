@@ -1,7 +1,8 @@
 #include <stdio.h>
-
 /**
- *ommnt
+ *main - Prints som text
+ *
+ *Return: 0 always
  */
 int main(void)
 {
