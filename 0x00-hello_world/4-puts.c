@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *function main - Outputs som text
+ *main - Outputs som text
  *
  *Return: 0 always
  */
