@@ -10,6 +10,7 @@ int i = 0;
 while (n + i <= 97)
 {
 printf("%d, ", n + i);
+i++;
 }
 printf("98\n");
 }
