@@ -23,12 +23,12 @@ continue;
 k = (w - w % 100) / 100;
 _putchar(' ');
 if (k == 0)
+_putchar(' ');
+else
 {
 z = 1;
-_putchar(' ');
-}
-else
 _putchar('0' + k);
+}
 k = (w % 100 - (w % 100) % 10) / 10;
 if (z == 1)
 _putchar('0' + k);
