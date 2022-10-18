@@ -19,8 +19,12 @@ _putchar('0');
 _putchar(',');
 continue;
 }
+k = (w - w % 100) / 100;
 _putchar(' ');
+if (k == 0)
 _putchar(' ');
+else
+_putchar('0' + k);
 k = (w - w % 10) / 10;
 if (k == 0)
 _putchar(' ');
@@ -34,6 +38,4 @@ _putchar(',');
 _putchar('\n');
 }
 }
-else
-_putchar('\n');
 }
