@@ -6,11 +6,10 @@
  */
 void print_to_98(int n)
 {
-int i = 1;
-printf("%d,", n);
+int i = 0;
 while (n + i <= 97)
 {
-printf(" %d,", n + i);
+printf("%d, ", n + i);
 }
-printf(" 98\n");
+printf("98\n");
 }

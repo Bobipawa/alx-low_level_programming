@@ -4,7 +4,7 @@
  *@n: integer
  *Return: Absolute value of n
  */
-int _abs(n)
+int _abs(int n)
 {
 if (n < 0)
 n = -n;
