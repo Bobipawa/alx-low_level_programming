@@ -1,13 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 /**
- *main - Entry point
- *Return: 0 always
+ *print_alphabet_x10 - prints lowercase alphabet 10 times
  */
-int main()
-{
-print_alphabet_x10();
-return (0);
-}
 void print_alphabet_x10(void)
 {
 int cpt = 0, i = 0;
