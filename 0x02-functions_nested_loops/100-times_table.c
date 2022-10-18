@@ -20,13 +20,14 @@ _putchar(',');
 continue;
 }
 _putchar(' ');
+_putchar(' ');
 k = (w - w % 10) / 10;
 if (k == 0)
 _putchar(' ');
 else
 _putchar('0' + k);
 _putchar('0' + w % 10);
-if (j == 9)
+if (j == n)
 break;
 _putchar(',');
 }
