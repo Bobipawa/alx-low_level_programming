@@ -10,5 +10,5 @@ int k = n % 10;
 if (k < 0)
 k = -k;
  _putchar('0' + k);
-return (n % 10);
+return (k);
 }
