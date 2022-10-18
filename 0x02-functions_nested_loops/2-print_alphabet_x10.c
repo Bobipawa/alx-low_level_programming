@@ -1,5 +1,4 @@
-#include <stdio.h>
-void print_alphabet_x10(void);
+40;276;0c#include <stdio.h>
 /**
  *main - Entry point
  *Return: 0 always
