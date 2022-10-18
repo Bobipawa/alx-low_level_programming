@@ -26,9 +26,6 @@ _putchar(' ');
 else
 _putchar('0' + k);
 k = (w % 100 - (w % 100) % 10) / 10;
-if (k == 0)
-_putchar(' ');
-else
 _putchar('0' + k);
 _putchar('0' + w % 10);
 if (j == n)
