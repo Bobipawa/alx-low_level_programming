@@ -11,7 +11,7 @@ while (cpt < 10)
 cpt++;
 for (i = 0; i <= 25; i++)
 {
-putchar('a'+i);
+putchar('a' + i);
 }
 putchar('\n');
 }
