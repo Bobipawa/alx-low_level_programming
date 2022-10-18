@@ -25,7 +25,7 @@ if (k == 0)
 _putchar(' ');
 else
 _putchar('0' + k);
-k = (w - w % 10) / 10;
+k = (w % 100 - (w % 100) % 10) / 10;
 if (k == 0)
 _putchar(' ');
 else
