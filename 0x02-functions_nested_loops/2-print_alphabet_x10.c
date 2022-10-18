@@ -1,4 +1,4 @@
-40;276;0c#include <stdio.h>
+#include <stdio.h>
 /**
  *main - Entry point
  *Return: 0 always
