@@ -1,50 +1,47 @@
 #include "main.h"
 /**
- *print_times_table - Prints times tables from 0 to 9
- *@n: an integer
+ * print_times_table - function that prints the n times table, starting with 0.
+ * @n: input of table n
+ * Return: nothing.
  */
 void print_times_table(int n)
 {
-if (n <= 15 && n > 0)
+int row, col;
+int mult = 0;
+if (n <= 15 && n >= 0)
 {
-int i, j, k, w, z;
-for (i = 0; i <= n; i++)
+for (row = 0; row <= n; row++)
 {
-z = 0;
-for (j = 0; j <= n; j++)
+for (col = 0; col <= n; col++)
 {
-w = i * j;
-if (j == 0)
-{
-_putchar('0');
-_putchar(',');
-continue;
+mult = (row * col);
+if (mult < 10)
 }
-k = (w - w % 100) / 100;
+if (col != 0)
+{
 _putchar(' ');
-if (k == 0)
 _putchar(' ');
+_putchar(' ');
+}
+_putchar(mult + '0');
+else if (mult < 100)
+{
+_putchar(' ');
+_putchar(' ');
+_putchar((mult / 10) + '0');
+_putchar((mult % 10) + '0');
+}
 else
 {
-z = 1;
-_putchar('0' + k);
-}
-k = (w % 100 - (w % 100) % 10) / 10;
-if (z == 1 || k > 0)
-_putchar('0' + k);
-else
 _putchar(' ');
-_putchar('0' + w % 10);
-if (j == n)
-break;
+_putchar((mult / 100) + '0');
+_putchar(((mult % 100) / 10) + '0');
+_putchar((mult % 10) + '0');
+}
+if (col != n)
 _putchar(',');
 }
 _putchar('\n');
 }
-}
-else if (n == 0)
-{
-_putchar('0');
-_putchar('\n');
 }
 }
