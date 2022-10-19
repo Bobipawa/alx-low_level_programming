@@ -5,7 +5,7 @@
  */
 void print_times_table(int n)
 {
-if (n <= 15 && n >= 0)
+if (n <= 15 && n > 0)
 {
 int i, j, k, w, z;
 for (i = 0; i <= n; i++)
@@ -41,5 +41,10 @@ _putchar(',');
 }
 _putchar('\n');
 }
+}
+else if (n == 0)
+{
+putchar('0');
+putchar('\n');
 }
 }
