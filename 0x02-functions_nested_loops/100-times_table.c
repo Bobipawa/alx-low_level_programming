@@ -44,7 +44,7 @@ _putchar('\n');
 }
 else if (n == 0)
 {
-putchar('0');
-putchar('\n');
+_putchar('0');
+_putchar('\n');
 }
 }
