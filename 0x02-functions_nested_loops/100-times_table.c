@@ -30,7 +30,7 @@ z = 1;
 _putchar('0' + k);
 }
 k = (w % 100 - (w % 100) % 10) / 10;
-if (z == 1)
+if (z == 1 || k > 0)
 _putchar('0' + k);
 else
 _putchar(' ');
