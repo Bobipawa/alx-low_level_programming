@@ -16,7 +16,7 @@ for (col = 0; col <= n; col++)
 {
 mult = (row * col);
 if (mult < 10)
-}
+{
 if (col != 0)
 {
 _putchar(' ');
@@ -24,6 +24,7 @@ _putchar(' ');
 _putchar(' ');
 }
 _putchar(mult + '0');
+}
 else if (mult < 100)
 {
 _putchar(' ');
