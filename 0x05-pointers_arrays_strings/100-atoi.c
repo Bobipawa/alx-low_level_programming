@@ -14,9 +14,9 @@ nb = nb * 10 + s[i] - '0';
 else if (s[i] == '-')
 signe = -1;
 else if (s[i] == '+')
-continue;
+signe = 1;
 else
 break;
 }
-return (nb);
+return (signe * nb);
 }
