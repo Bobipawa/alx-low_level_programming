@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strcopy - a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
+ * *_strcopy - a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
  *@dest: a string
  *@src: a string
  *Return: a pointer to dest
