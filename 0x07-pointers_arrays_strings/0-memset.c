@@ -2,21 +2,16 @@
 /**
  * *_memset - a function
  *@s: a string
- *@c: a char
+ *@b: a char
  *@n: an int
  *Return: a pointer on s
  */
-char *_memset(char *s, char c, int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-int w = 0, i = 0;
-while (i < n)
+unsigned int i;
+for (i = 0; i < n; i++)
 {
-if (s[i] == '\0')
-w = 1;
-s[i] = c;
-i++;
+*(s + i) = b;
 }
-if (w == 1)
-s[i] = '\0';
-return (s);
+ return (s);
 }
