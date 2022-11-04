@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *main - Prints the number of arguments
  *@argc: an int
@@ -7,6 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-printf("%d", argc);
+if (argc < 10)
+{
+_putchar(48 + argc);
+}
 return (0);
 }
