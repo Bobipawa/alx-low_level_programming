@@ -1,15 +1,12 @@
-#include "main.h"
+#include <stdio.h>
 /**
  *main - Prints the number of arguments
  *@argc: an int
  *@argv: a string array
  *Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-if (argc < 10)
-{
-_putchar(48 + argc);
-}
+printf("%d\n", argc - 1);
 return (0);
 }
