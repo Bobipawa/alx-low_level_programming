@@ -7,22 +7,19 @@
  */
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
-if (argc == 1)
-printf("0\n");
-else
+int num, digit, sum = 0;
+for (num = 1; num < argc; num++)
 {
-for (i = 1; i < argc; i++)
+for (digit = 0; argv[num][digit]; digit++)
 {
-if (isdigit(argv[i]))
-sum += argv[i];
-else
+if (argv[num][digit] < '0' || argv[num][digit] > '9')
 {
 printf("Error\n");
 return (1);
 }
 }
-printf("%d\n", sum);
+sum += atoi(argv[num]);
 }
-return (sum);
+printf("%d\n", sum);
+return (0);
 }

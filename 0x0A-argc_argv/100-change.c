@@ -7,32 +7,19 @@
  */
 int main(int argc, char *argv[])
 {
-int card = 0, rest = 0;
-if (argc == 2)
+int num, digit, sum = 0;
+for (num = 1; num < argc; num++)
 {
-rest = atoi(argv[i]);
-if (rest < 0)
+for (digit = 0; argv[num][digit]; digit++)
 {
-printf("0\n");
-}
-else
-{
-card += rest / 25;
-rest = rest % 25;
-card += rest / 10;
-rest = rest % 10;
-card += rest / 5;
-rest = rest % 5;
-card += rest / 2;
-rest %= 2;
-card += rest / 1;
-rest %= 1;
-}
-}
-else
+if (argv[num][digit] < '0' || argv[num][digit] > '9')
 {
 printf("Error\n");
 return (1);
 }
+}
+sum += atoi(argv[num]);
+}
+printf("%d\n", sum);
 return (0);
 }
